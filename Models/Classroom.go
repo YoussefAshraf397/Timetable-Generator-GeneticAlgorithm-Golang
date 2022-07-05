@@ -1,9 +1,9 @@
 package Models
 
 type Classroom struct {
-	ClassroomID       int
-	ClassroomCapacity int
-	SubjectIds        []int
+	ClassroomID       int   `json:"classroom_id" gorm:"primary_key"`
+	ClassroomCapacity int   `json:"classroom_capacity"`
+	SubjectIds        []int `json:"subject_ids" gorm:"type:text"`
 }
 
 func (g *Classroom) GetSubjectIDs() []int {

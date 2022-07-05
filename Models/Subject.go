@@ -1,12 +1,14 @@
 package Models
 
-import "math/rand"
+import (
+	"math/rand"
+)
 
 type Subject struct {
-	SubjectID  int
-	Code       string
-	Name       string
-	TeacherIDs []int
+	SubjectID  int    `json:"subject_id" gorm:"primary_key"`
+	Code       string `json:"code"`
+	Name       string `json:"name"`
+	TeacherIDs []int  `json:"teacher_ids" gorm:"type:text"`
 }
 
 func (m *Subject) GetRandomTeacherID() int {
