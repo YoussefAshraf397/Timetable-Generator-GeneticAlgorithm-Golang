@@ -1,7 +1,7 @@
 package Models
 
 type Session struct {
-	Session     int
+	SessionID   int
 	ClassroomID int
 	SubjectID   int
 	TeacherID   int

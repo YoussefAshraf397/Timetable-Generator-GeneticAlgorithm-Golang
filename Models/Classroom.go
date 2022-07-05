@@ -5,3 +5,13 @@ type Classroom struct {
 	ClassroomCapacity int
 	SubjectIds        []int
 }
+
+func (g *Classroom) GetSubjectIDs() []int {
+
+	return g.SubjectIds
+}
+
+func (g *Classroom) GetClassroomID() int {
+
+	return g.ClassroomID
+}
