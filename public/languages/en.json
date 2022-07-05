@@ -1,0 +1,12 @@
+{
+  "hii":"Hello World",
+  "hello_world": "Hello World",
+  "required" : "this field is required",
+  "min_max" : "this field must be between ",
+  "email" : "this fiel must be email",
+  "ok": "No issues in your request",
+  "Created_suc": "Your record created successfully",
+  "no_auth" : "This user not authenticate",
+  "something_wrong": "Some wrong in this request",
+  "Not_Found": "This user not found in the system"
+}
