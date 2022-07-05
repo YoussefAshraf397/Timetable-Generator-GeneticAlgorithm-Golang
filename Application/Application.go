@@ -29,9 +29,7 @@ func App() func() *Application {
 		if err != nil {
 			fmt.Println("Error in loading translation files !", err.Error())
 		}
-
 		return &application
-
 	}
 }
 

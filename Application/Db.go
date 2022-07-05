@@ -9,7 +9,8 @@ import (
 )
 
 func makeConnection() *gorm.DB {
-	dsn := os.Getenv("DATABASE_USER_NAME") + ":" + os.Getenv("DATABASE_PASSWORD") + "@tcp(" + os.Getenv("DATABASE_USER_HOST") + ":" + os.Getenv("DATABASE_USER_PORT") + ")/golang?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := os.Getenv("DATABASE_USER_NAME") + ":" + os.Getenv("DATABASE_PASSWORD") + "@tcp(" + os.Getenv("DATABASE_USER_HOST") + ":" + os.Getenv("DATABASE_USER_PORT") + ")/timetable?charset=utf8mb4&parseTime=True&loc=Local"
+	fmt.Println(dsn)
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		fmt.Println("error in database connection !", err.Error())
